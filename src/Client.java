@@ -16,7 +16,7 @@ public class Client {
 
         try {
             System.out.println("Client is ready to running");
-            socket = new Socket("192.168.244.134", 7777);
+            socket = new Socket("192.168.59.134", 7777);
             br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             out = new PrintWriter(socket.getOutputStream());
             starRedding();
@@ -41,7 +41,7 @@ public class Client {
                     String h = br.readLine();
                     if (h.equalsIgnoreCase("End")){
                         System.out.println("Server End tha chat");
-                        socket.close();
+socket.close();
                         break;}
 
 
