@@ -47,6 +47,7 @@ public class MyServer {
                     String h = br.readLine();
                     if (h.equalsIgnoreCase("End")){
                         System.out.println("Clint End tha chat");
+                        server.close();
                         break;}
 
 
